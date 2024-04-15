@@ -7,7 +7,8 @@ import HrMovieCard from "./HrMovieCard";
 const screenWidth = window.innerWidth;
 const MovieList = ({ genereID, indexValue }) => {
   const elementRef = useRef();
-
+  // console the enviornment variable
+  console.log(import.meta.env.VITE_APP_MOVIESDB_API_KEYS);
   const scrollToRight = (element) => {
     element.scrollLeft += 500;
   };

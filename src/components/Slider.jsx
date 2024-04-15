@@ -13,7 +13,6 @@ const Slider = () => {
   const getTrendiesMovies = () => {
     try {
       GlobalAPI.getTrendiesVideos().then((res) => {
-        console.log(res.data); // Access the data property of the response
         setMovieList(res.data.results);
       });
     } catch (error) {
